@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles.css">
+    <title>Documentation </title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+                "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+            line-height: 1.5;
+        }
+
+        #navbar>header {
+            margin-left: 20px;
+            margin-top: 20px;
+            font-size: 28px;
+            font-weight: 800;
+        }
+
+        header {
+            font-size: 28px;
+            font-weight: 800;
+        }
+
+        #navbar {
+            border: none;
+            border-right: 6px solid gray;
+            width: 300px;
+            min-width: 290px;
+            position: fixed;
+            height: 100vh;
+        }
+
+        ul {
+            flex: 0.4;
+        }
+
+        #navbar>li {
+            list-style: none;
+        }
+
+        a {
+            border-top: 2px solid black;
+            padding: 30px;
+            display: block;
+            padding: 10px 30px;
+            text-decoration: none;
+            margin-top: 20px;
+            color: black;
+        }
+
+        #main-doc {
+            position: absolute;
+            left: 30vw;
+            top: 10vh;
+        }
+
+        code {
+            width: 100%;
+            height: 8vh;
+            background-color: silver;
+        }
+
+        header {
+            margin-top: 6vh;
+        }
+
+        p {
+            margin-top: 4vh;
+        }
+
+        #main-doc>ul,
+        #main-doc li {
+            margin-top: 2vh;
+        }
+
+        code {
+            display: flex;
+            margin-top: 3vh;
+            margin-bottom: 3vh;
+        }
+
+        .main-section {
+            margin-top: 5vh;
+        }
+
+        @media only screen and (max-width: 1102px) {
+            #navbar {
+                position: absolute;
+                top: 5vh;
+                width: 100%;
+                place-items: center;
+                display: grid;
+            }
+
+            #main-doc {
+                position: absolute;
+                left: 0vw;
+                top: 65vh;
+            }
+
+            #navbar>header {
+                position: absolute;
+                top: -9vh;
+            }
+
+            #navbar>ul {
+                position: absolute;
+                top: 3%;
+                width: 100%;
+                border: 2px solid black;
+                height: 60vh;
+            }
+
+            #navbar>li {
+                list-style: none;
+            }
+
+            .navd {
+                border-top: none;
+            }
+
+            a {
+                border-top: 2px solid black;
+                display: block;
+                padding: 0;
+                text-decoration: none;
+                margin-top: 20px;
+                color: black;
+            }
+
+            .main-section {
+                margin-left: 40px;
+                margin-right: 40px;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <nav id="navbar">
+        <header>JS Documentation</header>
+        <ul>
+            <li><a class="nav-link navd" href="#Introduction">Introduction</a></li>
+            <li>
+                <a class="nav-link" href="#What_you_should_already_know">What you should already know</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#JavaScript_and_Java">JavaScript and Java</a>
+            </li>
+            <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
+            <li><a class="nav-link " href="#Variables">Variables</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <article>
+                <p>
+                    JavaScript is a cross-platform, object-oriented scripting language. It
+                    is a small and lightweight language. Inside a host environment (for
+                    example, a web browser), JavaScript can be connected to the objects of
+                    its environment to provide programmatic control over them.
+                </p>
+                <code>Hello world</code>
+                <p>
+                    JavaScript contains a standard library of objects, such as Array, Date,
+                    and Math, and a core set of language elements such as operators, control
+                    structures, and statements. Core JavaScript can be extended for a
+                    variety of purposes by supplementing it with additional objects; for
+                    example:
+                </p>
+                <ul>
+                    <li>
+                        Client-side JavaScript extends the core language by supplying objects
+                        to control a browser and its Document Object Model (DOM). For example,
+                        client-side extensions allow an application to place elements on an
+                        HTML form and respond to user events such as mouse clicks, form input,
+                        and page navigation.
+                    </li>
+                    <li>
+                        Server-side JavaScript extends the core language by supplying objects
+                        relevant to running JavaScript on a server. For example, server-side
+                        extensions allow an application to communicate with a database,
+                        provide continuity of information from one invocation to another of
+                        the application, or perform file manipulations on a server.
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="What_you_should_already_know">
+            <header>What you should already know</header>
+            <article>
+                <p>This guide assumes you have the following basic background:</p>
+
+                <ul>
+                    <li>
+                        A general understanding of the Internet and the World Wide Web (WWW).
+                    </li>
+                    <li>Good working knowledge of HyperText Markup Language (HTML).</li>
+                    <li>
+                        Some programming experience. If you are new to programming, try one of
+                        the tutorials linked on the main page about JavaScript.
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="JavaScript_and_Java">
+            <header>JavaScript and Java</header>
+            <article>
+                <p>
+                    JavaScript and Java are similar in some ways but fundamentally different
+                    in some others. The JavaScript language resembles Java but does not have
+                    Java's static typing and strong type checking. JavaScript follows most
+                    Java expression syntax, naming conventions and basic control-flow
+                    constructs which was the reason why it was renamed from LiveScript to
+                    JavaScript.
+                </p>
+                <code>Hello world</code>
+                <code>Hello world</code>
+
+                <p>
+                    In contrast to Java's compile-time system of classes built by
+                    declarations, JavaScript supports a runtime system based on a small
+                    number of data types representing numeric, Boolean, and string values.
+                    JavaScript has a prototype-based object model instead of the more common
+                    class-based object model. The prototype-based model provides dynamic
+                    inheritance; that is, what is inherited can vary for individual objects.
+                    JavaScript also supports functions without any special declarative
+                    requirements. Functions can be properties of objects, executing as
+                    loosely typed methods.
+                </p>
+                <code>Hello world</code>
+
+                <p>
+                    JavaScript is a very free-form language compared to Java. You do not
+                    have to declare all variables, classes, and methods. You do not have to
+                    be concerned with whether methods are public, private, or protected, and
+                    you do not have to implement interfaces. Variables, parameters, and
+                    function return types are not explicitly typed.
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="Hello_world">
+            <header>Hello world</header>
+            <article>
+                To get started with writing JavaScript, open the Scratchpad and write your
+                first "Hello world" JavaScript code:
+                <code>function greetMe(yourName) { alert("Hello " + yourName); }
+              greetMe("World");
+            </code>
+
+                Select the code in the pad and hit Ctrl+R to watch it unfold in your
+                browser!
+            </article>
+        </section>
+        <section class="main-section" id="Variables">
+            <header>Variables</header>
+            <p>
+                You use variables as symbolic names for values in your application. The
+                names of variables, called identifiers, conform to certain rules.
+            </p>
+            <p>
+                A JavaScript identifier must start with a letter, underscore (_), or
+                dollar sign ($); subsequent characters can also be digits (0-9). Because
+                JavaScript is case sensitive, letters include the characters "A" through
+                "Z" (uppercase) and the characters "a" through "z" (lowercase).
+            </p>
+            <p>
+                You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers.
+                You can also use the Unicode escape sequences as characters in
+                identifiers. Some examples of legal names are Number_hits, temp99, and
+                _name.
+            </p>
+        </section>
+    </main>
+</body>
+
+</html>
